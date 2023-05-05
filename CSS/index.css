@@ -4,4 +4,14 @@
 
 .bell_icon{
     width: 20px;
+    color: #ff8f00;
+}
+
+.lateral_navbar{
+    height: 100vh;
+}
+
+.main_header{
+    width: calc(100vw - 70px);
+    height: 100px;
 }
