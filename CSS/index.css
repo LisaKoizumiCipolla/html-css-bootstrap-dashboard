@@ -3,11 +3,15 @@ header{
 }
 
 nav{
-    width: 100vh;
+    width: 100vw;
 }
 
 .small_logo{
     width: 50px;
+}
+
+.big_logo{
+    display: none;
 }
 
 .searchbar_wrapper{
@@ -32,14 +36,14 @@ nav{
     width: 20px;
     color: #ff8f00;
 }
-
+/*
 main{
     height: calc(100vh - 70px);
     width: calc(100vh - 80px);
 }
-
+*/
 .lateral_navbar{
-    height: 100%;
+    height: calc(100vh - 70px);
     width: 80px;
     background: url(../img/sidebar-bg.png);
 }
@@ -54,16 +58,28 @@ main{
 }
 
 @media screen and (min-width: 992px){
-
+/*
     main{
         width: calc(100vh - 150px);
     }
-
+*/
     .lateral_navbar{
         width: 150px;
     }
 
     .main_container{
         width: calc(100% - 150px);
+    }
+
+    .small_logo{
+        display: none;
+    }
+
+    .big_logo{
+        display: block;
+    }
+    
+    .searchbar_wrapper{
+        width: calc(100vw - 350px);
     }
 }

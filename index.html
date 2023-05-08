@@ -14,25 +14,33 @@
 
         <header class="d-flex align-items-center">
 
-            <nav class="d-flex align-items-center justify-content-between">
+            <nav class="d-flex align-items-center justify-content-between px-2">
                     <a class="navbar-brand" href="#">
                         <img class="small_logo" src="./img/mobile-logo.png" alt="Bootstrap">
+                        <img class="big_logo" src="./img/logo.svg" alt="">
                     </a>
                     <div class="searchbar_wrapper d-flex align-items-center">
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <input class="my_searchbar" type="text" name="text" placeholder="Prova a cercare: Lezioni di Laravel">
                         
                     </div>
-                    <div class="d-flex">
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-bell bell_icon"></i>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><button class="dropdown-item" type="button">Profilo</button></li>
-                                <li><button class="dropdown-item" type="button">Fatturazione</button></li>
-                                <li><button class="dropdown-item" type="button">Logout</button></li>
-                            </ul>
+                    <div class="d-flex buttons">
+                        <div class="d-flex d-none d-lg-block">
+                            <button class="btn btn-light"><i class="fa-solid fa-list-ul"></i></button>
+                            <button class="btn btn-light"><i class="fa-solid fa-circle-question"></i></button>
+                            <button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        </div>
+                        <div class="d-flex">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell bell_icon"></i>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><button class="dropdown-item" type="button">Profilo</button></li>
+                                    <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                                    <li><button class="dropdown-item" type="button">Logout</button></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
             </nav>
@@ -53,12 +61,21 @@
                 </div>
             </section>
 
-            <section class="main_container">
-                <div class="main_header bg-primary">
+            <div class="main_container">
+                <section class="main_header bg-primary">
                    
-                </div>
-            </section>
+                </section>
 
+                <section class="card_wrapper">
+                    <div class="container-fluid">
+                        <div class="col-12"></div>
+                        <div class="col-12"></div>
+                        <div class="col-12"></div>
+                        <div class="col-12"></div>
+                    </div>
+                </section>
+
+            </div>
             
         </main>
       </body>
