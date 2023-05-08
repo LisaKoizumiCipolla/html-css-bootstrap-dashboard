@@ -62,20 +62,18 @@ main{
     height: calc(100vh - 170px);
 }
 
-.test1{
-    background-color:
-    blue;
-    height: 100px;
-    width: 100%;
+.class_icon{
+    width: 30px;
+    border-radius: 50%;
 }
 
-.test2{
-    background-color: 
-    red;
-    height: 100px;
-    width: 100%;
+.container_pencil,.container_bin{
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
 }
-
 
 @media screen and (min-width: 992px){
 /*
