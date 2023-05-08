@@ -11,58 +11,55 @@
           <title>BOOTSTRAP DASHBOARD</title>
       </head>
       <body>
-        <header>
-            <nav class="bg-light">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-2">
-                            <a class="navbar-brand" href="#">
-                                <img class="small_logo" src="./img/mobile-logo.png" alt="Bootstrap">
-                            </a>
-                        </div>
-                        <div class="col-8">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2 border-0" type="search" placeholder=" Prova a cercare: Lezioni con Laravel" aria-label="Search">
-                            </form>
-                        </div>
-                        <div class="col-2">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-bell bell_icon"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-end">
-                                  <li><button class="dropdown-item" type="button">Prorfilo</button></li>
-                                  <li><button class="dropdown-item" type="button">Fatturazione</button></li>
-                                  <li><button class="dropdown-item" type="button">Logout</button></li>
-                                </ul>
-                              </div>
+
+        <header class="d-flex align-items-center">
+
+            <nav class="d-flex align-items-center justify-content-between">
+                    <a class="navbar-brand" href="#">
+                        <img class="small_logo" src="./img/mobile-logo.png" alt="Bootstrap">
+                    </a>
+                    <div class="searchbar_wrapper d-flex align-items-center">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="my_searchbar" type="text" name="text" placeholder="Prova a cercare: Lezioni di Laravel">
+                        
+                    </div>
+                    <div class="d-flex">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-light" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell bell_icon"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><button class="dropdown-item" type="button">Profilo</button></li>
+                                <li><button class="dropdown-item" type="button">Fatturazione</button></li>
+                                <li><button class="dropdown-item" type="button">Logout</button></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-              </nav>
+            </nav>
+
             </header>
 
         <main class="d-flex">
-            <div class="bg-dark d-flex flex-column lateral_navbar p-3">
-                <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-house"></i><span class="d-none d-lg-flex px-2">Home</span></button>
-                <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-flex px-2">Stats</span></button>
-                <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-flex px-2" >Signals</span></button>
-            </div>
-            <header class="main_header bg-primary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">Nuovo studente</div>
-                        <div class="col-12">Boolean</div>
-                        <div class="col-12">Studenti Online negli ultimi 30 minuti</div>
-                    </div>
+            
+            <section class="bg-dark d-flex flex-column lateral_navbar p-3 justify-content-between">
+                <div class="button_wrapper">
+                    <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-house"></i><span class="d-none d-lg-flex px-2">Home</span></button>
+                    <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-lg-flex px-2">Stats</span></button>
+                    <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-signal"></i><span class="d-none d-lg-flex px-2" >Signals</span></button>
                 </div>
-            </header>
 
-            <div class="container">
-                <div class="row">
-                    
+                <div class="settings_div">
+                    <button type="button" class="btn btn-dark d-flex align-items-center"><i class="fa-solid fa-gear"></i><span class="d-none d-lg-flex px-2" >Signals</span></button>
                 </div>
-            </div>
+            </section>
+
+            <section class="main_container">
+                <div class="main_header bg-primary">
+                   
+                </div>
+            </section>
+
+            
         </main>
       </body>
 </html>
