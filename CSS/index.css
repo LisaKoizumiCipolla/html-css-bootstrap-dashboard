@@ -57,6 +57,26 @@ main{
     height: 100px;
 }
 
+.card_wrapper{
+    width: 100%;
+    height: calc(100vh - 170px);
+}
+
+.test1{
+    background-color:
+    blue;
+    height: 100px;
+    width: 100%;
+}
+
+.test2{
+    background-color: 
+    red;
+    height: 100px;
+    width: 100%;
+}
+
+
 @media screen and (min-width: 992px){
 /*
     main{
