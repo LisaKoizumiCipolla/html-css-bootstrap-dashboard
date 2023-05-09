@@ -63,6 +63,78 @@
 
             <div class="main_container">
                 <section class="main_header bg-primary">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop"><i class="fa-solid fa-plus"></i></button>
+
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Inserisci un nuovo utente</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                  <label for="insertName" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="insertName" aria-label="First name">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <label for="insertSurname" class="form-label">Cognome</label>
+                                    <input type="text" class="form-control" is="insertSurname" aria-label="Last name">
+                                  </div>
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress" >
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Città</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">Stato</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Scegli...</option>
+                                    <option>Oscuro Altopiano di Lang</option>
+                                    <option>Silverston</option>
+                                    <option>Mechanus</option>
+                                    <option>Aasgard</option>
+                                    <option>Tatooine</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">CAP</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="formFile" class="form-label">Foto</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Seleziona per proseguire
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary">Salva</button>
+                                  <button type="submit" class="btn btn-warning">Svuota</button>
+                                  
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+
                    
                 </section>
 
@@ -80,27 +152,20 @@
                                         <table class="table">
                                             <thead>
                                               <tr>
-                                                <th scope="col" class="start_bootstrap">Nome</th>
-                                                <th scope="col" class="d-none d-md-inline-block">Data inizio</th>
-                                                <th scope="col" class="d-none d-md-inline-block">ROI</th>
+                                                <th class="first_list" scope="col">Nome</th>
+                                                <th scope="col">Data inizio</th>
+                                                <th scope="col">ROI</th>
                                                 <th scope="col">Stato</th>
                                                 <th scope="col">Azioni</th>
                                               </tr>
                                             </thead>
                                             <tbody>
                                               <tr>
-                                                <th class="start_bootstrap"><img class="class_icon" src="./img/class-avatar.jpg" alt=""> Classe 98</th>
-                                                <div>
-                                                    <td class="d-none d-md-inline-block">15 Feb 2021</td>
-                                                    <td class="d-none d-md-inline-block">20%</td>
-                                                    <td><span class="badge rounded-pill bg-success">Done</span></td>
-                                                    <td class="d-flex">
-                                                        <button class="container_pencil mx-2 d-flex align-items-center justify-content-center"><i class="fa-solid fa-pencil"></i></button>
-                                                        <button class="container_bin d-flex align-items-center justify-content-center"><i class="fa-solid fa-trash"></i></button>
-                                                    </td>
-                                                </div>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
                                               </tr>
-                                              
                                             </tbody>
                                           </table>
                                     </div>
@@ -184,11 +249,23 @@
                                 </div>
 
                                 <div class="card mb-4" style="">
-                                    <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
-                                    </ul>
+                                    <div class="p-3">
+                                        <div class="card" style="">
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <img class="graph_img" src="./img/stats.jpeg" alt="">
+                                                    <p>Utenti attivi</p>
+                                                    <p>Lista degli utenti attivi nell'ultimo mese</p>
+                                                </li>
+                                                <li class="list-group-item">Gennaio: 1200</li>
+                                                <li class="list-group-item">Febbraio: 800</li>
+                                                <li class="list-group-item">Marzo: 1500</li>
+                                                <li class="list-group-item">
+                                                    <a href="#" class="link-primary">Visualizza report approfondito</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
